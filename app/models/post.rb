@@ -7,4 +7,8 @@ class Post < ActiveRecord::Base
 
   validates :name, presence: true
   validates :content, presence: true
+
+  def tags_attributes=(tag_attributes)
+    binding.pry
+  end
 end
